@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <div class="corpo">
@@ -17,33 +17,35 @@
 
 
         <div class="display">
-            <span class="currentNumber">0</span>
+            <input class="display-box" type="text" id="result"></>
         </div>
 
 
 
         <div class="teclado">
             <div class="operadores">
-                <button name="-" onclick="registrarOperador()">-</button>
-                <button name="+" onclick="registrarOperador()">+</button>
-                <button name="*" onclick="registrarOperador()">*</button>
-                <button name="/" onclick="registrarOperador()">/</button>
+                <input type="button" value="-" onclick="display('-')"></>
+                <input type="button" value="+" onclick="display('+')"></>
+                <input type="button" value="*" onclick="display('*')"></>
+                <input type="button" value="/" onclick="display('/')"></>
+                <input type="button" value="C" onclick="limparTela()"></>
             </div>
 
 
 
             <div class="numeros">
-                <button name="1" onclick="registrarNumero()">1</button>
-                <button name="2" onclick="registrarNumero()">2</button>
-                <button name="3" onclick="registrarNumero()">3</button>
-                <button name="4" onclick="registrarNumero()">4</button>
-                <button name="5" onclick="registrarNumero()">5</button>
-                <button name="6" onclick="registrarNumero()">6</button>
-                <button name="7" onclick="registrarNumero()">7</button>
-                <button name="8" onclick="registrarNumero()">8</button>
-                <button name="9" onclick="registrarNumero()">9</button>
-                <button name="0" onclick="registrarNumero()">0</button>
-                <button class="enter" name="enter" onclick="Enter()">=</button>
+                <input type="button" value="1" onclick="display('1')"></>
+                <input type="button" value="2" onclick="display('2')"></>
+                <input type="button" value="3" onclick="display('3')"></>
+                <input type="button" value="4" onclick="display('4')"></>
+                <input type="button" value="5" onclick="display('5')"></>
+                <input type="button" value="6" onclick="display('6')"></>
+                <input type="button" value="7" onclick="display('7')"></>
+                <input type="button" value="8" onclick="display('8')"></>
+                <input type="button" value="9" onclick="display('9')"></>
+                <input type="button" value="0" onclick="display('0')"></>
+                <input type="button" value="." onclick="display('.')"></>
+                <input type="button" class="enter" value="=" onclick="calcular()"></>
             </div>
         </div>
     </div>

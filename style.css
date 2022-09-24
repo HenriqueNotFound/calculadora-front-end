@@ -1,5 +1,5 @@
 body {
-    background-color: darkslateblue;
+    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -29,13 +29,12 @@ body {
 }
 
 .display {
-    margin: 9%;
-
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 
+    margin: 9%;
     height: 100px;
     width: 360px;
     background-color: green;
@@ -44,10 +43,14 @@ body {
     border: 5px solid gray;
 }
 
-.display span {
+.display-box {
+    text-align: end;
+    border: none;
+    max-width: 330px;
+    height: 90px;
+    background-color: transparent;
     font-size: 32px;
     font-weight: 700;
-    margin-right: 5%;
     cursor: default;
 }
 
@@ -55,16 +58,17 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .operadores {
-    width: 450px;
+    width: 380px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.operadores button {
+.operadores input {
     background-color: darkgray;
 
     font-size: larger;
@@ -80,6 +84,14 @@ body {
     margin-bottom: 40px;
 }
 
+.operadores input:hover {
+    cursor: pointer;
+}
+
+.operadores input:active {
+    box-shadow: 1.5px 1.5px 1px gray;
+}
+
 .numeros {
     display: flex;
     flex-direction: row;
@@ -90,7 +102,7 @@ body {
     height: 200px;
 }
 
-.numeros button {
+.numeros input {
     background-color: darkgray;
 
     font-size: larger;
@@ -105,10 +117,10 @@ body {
     width: 120px;
 }
 
-button.enter {
-    width: 250px;
+.numeros input:hover {
+    cursor: pointer;
 }
 
-.numeros button:hover {
-    cursor: pointer;
+.numeros input:active {
+    box-shadow: 1.5px 1.5px 1px gray;
 }
