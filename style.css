@@ -80,10 +80,18 @@ body {
     box-shadow: 3px 3px 2px gray;
 
     height: 30px;
-    min-width: 10%;
-    width: 15%;
+    min-width: 5%;
+    width: 13%;
     max-width: 20%;
     margin-bottom: 40px;
+}
+
+.apagar {
+    margin-left: 10px;
+}
+
+.C {
+    color: darkred;
 }
 
 .operadores input:hover {
