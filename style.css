@@ -62,10 +62,11 @@ body {
 }
 
 .operadores {
-    width: 380px;
+    min-width: 380px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .operadores input {
@@ -78,9 +79,10 @@ body {
     border: none;
     box-shadow: 3px 3px 2px gray;
 
-    margin: 1%;
     height: 30px;
-    width: 88px;
+    min-width: 10%;
+    width: 15%;
+    max-width: 20%;
     margin-bottom: 40px;
 }
 
